@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Entregas</title>
+    <link href="personalizacao.css"  rel="stylesheet"/>
+</head>
+<body>
+        <div class="menu">
+            <a class="entregas" href="c">Entregas</a>
+            <a href="pedidos">Pedidos</a>
+            <a href="produtos">Produtos</a>
+        </div>
+        <div class="form">
+            <form name="formEntrega">
+                <fieldset>
+                    <legend>Controle de Entregas</legend>
+                    <div class="dados">
+                        <label>Entrega Nº</label>
+                        <input class="input" type="number" size="8" id="nro"/>
+                        <label class="1">Nome do Cliente</label>
+                        <input class="input" type="text" size="40" id="nome"/>
+                        <label class="1">Endereço</label>
+                        <input class="input" type="text" size="40" id="endereco"/>
+                    </div>
+                    <div class="dados">
+                        <label>Bairro</label>
+                        <input class="input" type="text" size="20" id="bairro"/>
+                        <label class="1">Cidade</label>
+                        <input class="input" type="text" size="30" id="cidade"/>
+                        <label class="1">Estado</label>
+                        <input class="input" type="text" size="30" id="estado"/>
+                    </div>
+                    <div class="dados">
+                        <label class="1">Nº do Pedido</label>
+                        <input class="input" type="number" size="8" id="nroped"/>
+                        <label>Valor</label>
+                        <input class="input" type="number" size="10" id="valor"/>
+                        <label class="1">Forma de Pagamento</label>
+                        <select class="input" id="pagamento">
+                            <option value="dinheiro">Dinheiro</option>
+                            <option value="cartao">Cartão</option>
+                            <option value="cheque">Cheque</option>
+                            <option value="transf">Transferência Bancária</option>
+                          </select>
+                    </div>
+                    <div class="dados">
+                        <label>Observações</label>
+                        <textarea class="input" id="observacoes"></textarea>
+                        <button id="salvar">💾 Salvar</button>
+                        <button id="cancelar">❌ Cancelar</button>
+                    </div>
+                </fieldset>
+            </form>
+    
+        </div>   
+        <div id="resposta"></div>
+        <script src="entrega.js"></script>
+    </body>
+</html>

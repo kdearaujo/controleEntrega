@@ -91,7 +91,7 @@ document.getElementById('salvar').onclick = function(){
         return false
     }
     if(registro.valor === '' || registro.endereco === '' || registro.cidade === ''){
-        alert('Preencha o endereço, cidade e valor!')
+        alert('Preencha os dados em todos campos!')
         return false
     }
     entrega.salva(registro)
